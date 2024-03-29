@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="w-[90%] m-auto">
+    <div class="">
+        <form action="index.php?act=addtocart" method="post">
+            <input type="hidden" name="id" value="' . $id . '">
+            <input type="hidden" name="name" value="' . $name . '">
+            <input type="hidden" name="img" value="' . $img . '">
+            <input type="hidden" name="price" value="' . $price . '">
+            <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+        </form>
+    </div>
+
+    <header class="py-2 m-auto">
+        <h1 class="border-2 border-black py-6 rounded-[4px] bg-[#BDBDBD] font-bold px-2 text-4xl">ADMIN</h1>
+        <br>
+        <div class="">
+            <ul class="flex border-2 border-black py-4 rounded-[4px] bg-black">
+                <li
+                    class="px-4 font-bold text-xl hover:text-white text-[#BDBDBD] hover:scale-105 border-r-2 active:text-green-300 ">
+                    <a href="./admin.html">Trang chủ</a>
+                </li>
+
+                <li
+                    class="px-4 font-bold text-xl hover:text-white text-[#BDBDBD] hover:scale-105 border-r-2 active:text-green-300 ">
+                    <a href="#">Danh mục</a>
+                </li>
+
+                <li
+                    class="px-4 font-bold text-xl hover:text-white text-[#BDBDBD] hover:scale-105 border-r-2 active:text-green-300 ">
+                    <a href="#">Hàng hóa</a>
+                </li>
+
+                <li
+                    class="px-4 font-bold text-xl hover:text-white text-[#BDBDBD] hover:scale-105 border-r-2 active:text-green-300 ">
+                    <a href="#">Khách hàng</a>
+                </li>
+
+                <li
+                    class="px-4 font-bold text-xl hover:text-white text-[#BDBDBD] hover:scale-105 border-r-2 active:text-green-300 ">
+                    <a href="#">Bình luận</a>
+                </li>
+
+                <li
+                    class="px-4 font-bold text-xl hover:text-white text-[#BDBDBD] hover:scale-105  active:text-green-300 ">
+                    <a href="#">Thống kê</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <br>
+    <div class="">
+        <div class="border-2 border-black rounded-md py-2 bg-green-200">
+            <h1 class="px-2 font-bold ">DANH SÁCH HÀNG HÓA</h1>
+        </div>
+        <br>
+        <div>
+            <table class="">
+                <tr>
+                    <th class="border-2 text-white bg-black font-bold px-[]"></th>
+                    <th class="border-2 text-white bg-black font-bold px-10">Mã loại</th>
+                    <th class="border-2 text-white bg-black font-bold px-10 ">Tên loại</th>
+                    <th class="border-2 text-white bg-black font-bold px-[]"></th>
+                </tr>
+
+                <tr>
+                    <td class="border-2 px-[150px]"><input type="checkbox" name="" id> </td>
+                    <td class="border-2 px-[150px]">001</td>
+                    <td class="border-2 px-[150px]">Siêu Nhân</td>
+                    <td class="border-2 py-2 px-[150px]">
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Sửa</button>
+                        </a>
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Xóa</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-2 px-[150px]"><input type="checkbox" name="" id> </td>
+                    <td class="border-2 px-[150px]">001</td>
+                    <td class="border-2 px-[150px]">Siêu Nhân</td>
+                    <td class="border-2 py-2 px-[150px]">
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Sửa</button>
+                        </a>
+                        <br>
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Xóa</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-2 px-[150px]"><input type="checkbox" name="" id> </td>
+                    <td class="border-2 px-[150px]">001</td>
+                    <td class="border-2 px-[150px]">Siêu Nhân</td>
+                    <td class="border-2 py-2 px-[150px]">
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Sửa</button>
+                        </a>
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Xóa</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-2 px-[150px]"><input type="checkbox" name="" id> </td>
+                    <td class="border-2 px-[150px]">001</td>
+                    <td class="border-2 px-[150px]">Siêu Nhân</td>
+                    <td class="border-2 py-2 px-[150px]">
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Sửa</button>
+                        </a>
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Xóa</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-2 px-[150px]"><input type="checkbox" name="" id> </td>
+                    <td class="border-2 px-[150px]">001</td>
+                    <td class="border-2 px-[150px]">Siêu Nhân</td>
+                    <td class="border-2 py-2 px-[150px]">
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Sửa</button>
+                        </a>
+                        <a href="">
+                            <button
+                                class="border-2 border-black rounded-md px-4 text-white bg-black font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Xóa</button>
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+        </div>
+        <div class="px-4 py-2">
+            <!-- <form action="#" method="POST"> -->
+            <br>
+            <div>
+                <button><a href="#"
+                        class="text-white bg-black rounded-md py-2 px-2 font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Chọn
+                        tất cả</a></button>
+                <button><a href="#"
+                        class="text-white bg-black rounded-md py-2 px-2 font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Bỏ
+                        chọn tất cả</a></button>
+                <button><a href="#"
+                        class="text-white bg-black rounded-md py-2 px-2 font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Xóa
+                        các mục chọn</a></button>
+                <button><a href="./admin.html"
+                        class="text-white bg-black rounded-md py-2 px-2 font-bold hover:text-red-300 active:text-green-300 hover:scale-105">Nhập
+                        thêm</a></button>
+            </div>
+            <!-- </form> -->
+        </div>
+    </div>
+</body>
+
+</html>

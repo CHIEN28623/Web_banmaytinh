@@ -1,0 +1,7 @@
+* {box-sizing:border-box}
+
+.abc{
+   width:80%;
+   padding:right-10px;
+   border:solid 1px black
+}
